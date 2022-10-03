@@ -80,5 +80,6 @@ body {
   #submit {
     width: 300px;
     margin: 0;
+    color: black !important;
   }
 }
