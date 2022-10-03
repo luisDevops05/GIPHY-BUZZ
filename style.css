@@ -9,5 +9,58 @@
 }
 
 .navbar {
-  background-color: red !;
+  width: 100%;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+  background-color: #1f1a3f !important;
+}
+.buzz {
+  color: rgb(255, 145, 0) !important;
+}
+
+.navbar-toggler {
+  background-color: white !important;
+  height: 42px;
+}
+
+.navbar-brand {
+  font-size: 28px !important;
+  color: white !important;
+}
+/* navbar links */
+.active {
+  font-size: 20px !important;
+  color: white !important;
+}
+
+.active:hover {
+  color: rgb(255, 145, 0) !important;
+  background-color: rgba(255, 255, 255, 0.315);
+  border-radius: 20%;
+}
+/* search bar */
+.searchbar {
+  margin-top: 40px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+#search {
+  width: 900px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#submit {
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+#submit:hover {
+  background-color: rgb(255, 145, 0);
+  color: white;
+  border: none;
 }
