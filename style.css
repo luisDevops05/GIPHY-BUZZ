@@ -80,6 +80,26 @@ body {
   border: none;
 }
 
+/* images for trending */
+
+.trending {
+  display: grid;
+  grid-template-columns: repeat(8, 200px);
+  justify-content: center;
+  align-content: center;
+  gap: 40px;
+  padding-top: 100px;
+}
+
+.allT {
+  text-decoration: none;
+  color: white;
+}
+
+.allT:hover {
+  color: rgb(255, 145, 0);
+}
+
 @media only screen and (max-width: 375px) {
   .navbar-brand {
     font-size: 20px !important;
@@ -93,5 +113,12 @@ body {
     width: 300px;
     margin: 0;
     color: black !important;
+  }
+
+  .trending {
+    grid-template-columns: 250px;
+    padding-top: 30px;
+    justify-content: center;
+    gap: 10px;
   }
 }
