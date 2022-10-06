@@ -53,6 +53,13 @@ body {
   justify-content: center;
   color: white;
 }
+
+.whoChildC {
+  text-align: center;
+}
+/* .tryNow {
+  text-align: center;
+} */
 /* search bar */
 .searchbar {
   margin-top: 40px;
@@ -100,6 +107,30 @@ body {
   color: rgb(255, 145, 0);
 }
 
+/* footer stying */
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+.mainConFooter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: end;
+  padding-top: 10px;
+}
+
+.more {
+  margin-right: 80px;
+}
+
+.copyRight {
+  padding-bottom: 5px;
+  margin-left: 30px;
+}
+
 @media only screen and (max-width: 375px) {
   .navbar-brand {
     font-size: 20px !important;
@@ -120,5 +151,18 @@ body {
     padding-top: 30px;
     justify-content: center;
     gap: 10px;
+  }
+  .mainConFooter {
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .more {
+    margin-right: 5px;
+  }
+  .copyRight {
+    margin-left: 15px;
   }
 }
