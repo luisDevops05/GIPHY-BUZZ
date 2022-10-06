@@ -88,23 +88,24 @@ body {
 }
 
 /* images for trending */
-
-.trending {
+.trendingMain {
   display: grid;
-  grid-template-columns: repeat(8, 200px);
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: repeat(1, 300px);
+  gap: 10px;
   justify-content: center;
-  align-content: center;
-  gap: 40px;
-  padding-top: 100px;
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 
-.allT {
-  text-decoration: none;
-  color: white;
+.conImg {
+  border: solid white 2px;
 }
 
-.allT:hover {
-  color: rgb(255, 145, 0);
+/* link remember to style */
+.seeMore {
+  margin-left: 440px;
+  margin-bottom: 40px;
 }
 
 /* footer stying */
@@ -122,6 +123,7 @@ footer {
   padding-top: 10px;
 }
 
+/* links in this area remember to style */
 .more {
   margin-right: 80px;
 }
@@ -131,6 +133,7 @@ footer {
   margin-left: 30px;
 }
 
+/* start of media query */
 @media only screen and (max-width: 375px) {
   .navbar-brand {
     font-size: 20px !important;
@@ -164,5 +167,21 @@ footer {
   }
   .copyRight {
     margin-left: 15px;
+  }
+
+  .trendingMain {
+    grid-template-columns: 350px;
+    grid-template-rows: repeat(2, 250px);
+  }
+
+  .seeMore {
+    margin-left: 10px;
+  }
+
+  .img3 {
+    display: none;
+  }
+  .img4 {
+    display: none;
   }
 }
