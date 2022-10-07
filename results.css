@@ -15,7 +15,14 @@
   border-radius: 15%;
 }
 
-.con {
+.cons {
   border: solid white 1px;
   border-radius: 2%;
+}
+
+@media only screen and (max-width: 375px) {
+  .mainRes {
+    grid-template-columns: repeat(1, 270px);
+    grid-template-rows: repeat(25, 300px);
+  }
 }
