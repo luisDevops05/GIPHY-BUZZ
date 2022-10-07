@@ -87,7 +87,32 @@ body {
   border: none;
 }
 
+.seeAllLinks {
+  color: rgb(255, 145, 0);
+  text-decoration: none;
+}
+
+.seeAllLinks:hover {
+  color: white;
+  text-decoration: underline rgb(255, 145, 0);
+}
+
 /* images for trending */
+
+.titleSecMain {
+  display: flex !important;
+  margin-top: 50px;
+  justify-content: center !important;
+  align-content: center !important;
+}
+
+.trendingT {
+  text-align: center;
+  color: white;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+}
+
 .trendingMain {
   display: grid;
   grid-template-columns: repeat(4, 300px);
@@ -126,9 +151,35 @@ footer {
   padding-top: 10px;
 }
 
-/* links in this area remember to style */
+.liCon {
+  border-left: solid 1px white;
+}
+
+.liCon ul li {
+  list-style: none;
+}
+
+.liCon a {
+  text-decoration: none;
+  color: white;
+}
+
+.liCon a:hover {
+  color: rgb(255, 145, 0);
+  text-decoration: underline;
+}
+
+.topSearch h6 {
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+}
 .more {
   margin-right: 80px;
+}
+
+.more h6 {
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
 }
 
 .copyRight {
@@ -163,6 +214,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     gap: 0;
+    color: rgb(255, 145, 0);
   }
 
   .more {
@@ -173,7 +225,7 @@ footer {
   }
 
   .trendingMain {
-    grid-template-columns: 350px;
+    grid-template-columns: 335px;
     grid-template-rows: repeat(2, 250px);
   }
 
@@ -185,6 +237,14 @@ footer {
     display: none;
   }
   #img4 {
+    display: none;
+  }
+
+  #img5 {
+    display: none;
+  }
+
+  #img6 {
     display: none;
   }
 }
