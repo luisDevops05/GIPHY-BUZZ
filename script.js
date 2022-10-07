@@ -54,7 +54,7 @@ let trendingGiphys = function(){
             throw new Error('Network response error!')
         }
     }).then((data)=>{
-        console.log(data)
+        // console.log(data)
         showTrendingGiphy(data)
     }).catch((error)=>console.log('Fetch Error',error))
 }
@@ -68,7 +68,7 @@ let trendingStickers = function(){
             throw new Error('Network response error!')
         }
     }).then((data)=>{
-        console.log(data)
+        // console.log(data)
         showTrendingStickers(data)
     }).catch((error)=>console.log('Fetch Error',error))
 }
@@ -79,7 +79,7 @@ function showTrendingGiphy(data){
     //variables for the img containers on trending giphys
     let urlTrending1 = data.data[7].images.downsized.url
     let urlTrending2 = data.data[1].images.downsized.url
-    let urlTrending3 = data.data[2].images.downsized.url
+    let urlTrending3 = data.data[8].images.downsized.url
     let urlTrending4 = data.data[3].images.downsized.url
     
     img1.style.backgroundImage = 'url('+urlTrending1+')'
