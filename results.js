@@ -66,76 +66,9 @@ let searchGiphyRes = function(){
         }
     }).then((data)=>{
         // console.log(data)
-        showSearchRes(data)
+        showSearch(data)
     }).catch((error)=>console.log('Fetch Error'))
 }
-
-
-function showSearchRes(data){
-    console.log(data.data)
-  
-let imgUrl1 = data.data[0].images.downsized.url
-let imgUrl2 = data.data[1].images.downsized.url
-let imgUrl3 = data.data[2].images.downsized.url
-let imgUrl4 = data.data[3].images.downsized.url
-let imgUrl5 = data.data[4].images.downsized.url
-let imgUrl6 = data.data[5].images.downsized.url
-let imgUrl7 = data.data[6].images.downsized.url
-let imgUrl8 = data.data[7].images.downsized.url
-let imgUrl9 = data.data[8].images.downsized.url
-let imgUrl10 = data.data[9].images.downsized.url
-let imgUrl11 = data.data[10].images.downsized.url
-let imgUrl12 = data.data[11].images.downsized.url
-let imgUrl13 = data.data[12].images.downsized.url
-let imgUrl14 = data.data[13].images.downsized.url
-let imgUrl15 = data.data[14].images.downsized.url
-let imgUrl16 = data.data[15].images.downsized.url
-let imgUrl17 = data.data[16].images.downsized.url
-let imgUrl18 = data.data[17].images.downsized.url
-let imgUrl19 = data.data[18].images.downsized.url
-let imgUrl20 = data.data[19].images.downsized.url
-let imgUrl21 = data.data[20].images.downsized.url
-let imgUrl22 = data.data[21].images.downsized.url
-let imgUrl23 = data.data[22].images.downsized.url
-let imgUrl24 = data.data[23].images.downsized.url
-let imgUrl25= data.data[24].images.downsized.url
-
-
-imgc1.style.backgroundImage = 'url('+imgUrl1+')'
-imgc2.style.backgroundImage = 'url('+imgUrl2+')'
-imgc3.style.backgroundImage = 'url('+imgUrl3+')'
-imgc4.style.backgroundImage = 'url('+imgUrl4+')'
-imgc5.style.backgroundImage = 'url('+imgUrl5+')'
-imgc6.style.backgroundImage = 'url('+imgUrl6+')'
-imgc7.style.backgroundImage = 'url('+imgUrl7+')'
-imgc8.style.backgroundImage = 'url('+imgUrl8+')'
-imgc9.style.backgroundImage = 'url('+imgUrl9+')'
-imgc10.style.backgroundImage = 'url('+imgUrl10+')'
-imgc11.style.backgroundImage = 'url('+imgUrl11+')'
-imgc12.style.backgroundImage = 'url('+imgUrl12+')'
-imgc13.style.backgroundImage = 'url('+imgUrl13+')'
-imgc14.style.backgroundImage = 'url('+imgUrl14+')'
-imgc15.style.backgroundImage = 'url('+imgUrl15+')'
-imgc16.style.backgroundImage = 'url('+imgUrl16+')'
-imgc17.style.backgroundImage = 'url('+imgUrl17+')'
-imgc18.style.backgroundImage = 'url('+imgUrl18+')'
-imgc19.style.backgroundImage = 'url('+imgUrl19+')'
-imgc20.style.backgroundImage = 'url('+imgUrl20+')'
-imgc21.style.backgroundImage = 'url('+imgUrl21+')'
-imgc22.style.backgroundImage = 'url('+imgUrl22+')'
-imgc23.style.backgroundImage = 'url('+imgUrl23+')'
-imgc24.style.backgroundImage = 'url('+imgUrl24+')'
-imgc25.style.backgroundImage = 'url('+imgUrl25+')'
-
-
-
-}
-
-
-
-
-
-
 
 
 
