@@ -21,7 +21,10 @@ let img7 = document.querySelector('.imgT3')
 let img8 = document.querySelector('.imgT4') 
 
 
-
+// setting the userData
+submitBtn.addEventListener('click',function(){
+    localStorage.setItem('userData',searchBar.value)
+})
 
 
 
