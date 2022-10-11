@@ -43,12 +43,12 @@ let submitBtn = document.getElementById('submit')
 // currently not working worked once its a small bug
 
 submitBtn.addEventListener('click',function(){
-    localStorage.setItem('userDataRes',searchBar.value)
+    sessionStorage.setItem('userDataRes',searchBar.value)
     
 })
 
-let userInput = localStorage.getItem('userData') 
-let userInputRes = localStorage.getItem('userDataRes')
+let userInput = sessionStorage.getItem('userData') 
+let userInputRes = sessionStorage.getItem('userDataRes')
 
 
 
