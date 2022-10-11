@@ -38,8 +38,11 @@ let imgc25 = document.querySelector('.con25')
 // })
 // api with user input 
 // currently not working worked once its a small bug
-let userInput = localStorage.getItem('userInput')
-const searchApi = 'https://api.giphy.com/v1/gifs/search?api_key=nhTKuYXaMk6fp1e6S3Ts68zTe4nEmEN0&q=intresting&limit=50'
+
+
+let userInput = localStorage.getItem('userData')
+
+const searchApi = 'https://api.giphy.com/v1/gifs/search?api_key=nhTKuYXaMk6fp1e6S3Ts68zTe4nEmEN0&q='+userInput+'&limit=50'
 
 
 
