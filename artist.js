@@ -25,10 +25,13 @@ let imgc23 = document.querySelector('.con23')
 let imgc24 = document.querySelector('.con24')
 let imgc25 = document.querySelector('.con25')
 
-const reactionsApi = 'https://api.giphy.com/v1/gifs/search?api_key=nhTKuYXaMk6fp1e6S3Ts68zTe4nEmEN0&q=reactions&limit=50' 
+//fetch links
 
-let reactionsFetch = function(){
-    fetch(reactionsApi).then((response)=>{
+const sportApi = 'https://api.giphy.com/v1/gifs/search?api_key=nhTKuYXaMk6fp1e6S3Ts68zTe4nEmEN0&q=artists&limit=50' 
+// <------------------------------------------------->
+
+let sportFetch = function(){
+    fetch(sportApi).then((response)=>{
         if(response.ok){
             return response.json()
         }else{
@@ -40,7 +43,8 @@ let reactionsFetch = function(){
     }).catch((error)=>console.log('Fetch Error'))
 }
 
-reactionsFetch()
+sportFetch()
+
 
 
 function displayData(data){
