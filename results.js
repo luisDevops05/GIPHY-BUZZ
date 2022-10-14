@@ -32,6 +32,7 @@ let submitBtn = document.getElementById('submit')
 
 
 
+
 let searchbarHandle = function() {
 
     submitBtn.addEventListener('click',function(){
@@ -158,7 +159,19 @@ imgc22.style.backgroundImage = 'url('+imgUrl22+')'
 imgc23.style.backgroundImage = 'url('+imgUrl23+')'
 imgc24.style.backgroundImage = 'url('+imgUrl24+')'
 imgc25.style.backgroundImage = 'url('+imgUrl25+')'
+} 
+
+let hideSideNote = function(){
+let hideBtn = document.getElementById('hideBtn')
+let txt = document.getElementById('dis')
+hideBtn.addEventListener('click',function(){
+    hideBtn.style.display ='none'
+txt.style.display ='none'
+
+})
 }
+
+hideSideNote()
 
 searchGiphy()
 searchGiphyRes()

@@ -24,9 +24,54 @@
   border: solid rgba(255, 255, 255, 0.157) 2px;
 }
 
+.reac {
+  margin-top: 40px;
+}
+.titleR h1 {
+  color: rgb(255, 145, 0);
+  text-align: center;
+  border-bottom: solid 1px white;
+}
+
+.disclaimerM {
+  margin-top: 40px;
+  display: flex;
+  justify-content: end;
+  margin-right: 80px;
+  align-items: center;
+}
+
+.disclaimer {
+  margin-right: 80px;
+  color: white;
+}
+.disclaimer p {
+  height: 1.5;
+  font-size: 18px;
+}
+.sidenote {
+  color: rgb(255, 145, 0);
+}
+.hide button {
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  width: 40px;
+}
+.x {
+  color: rgb(5, 5, 5);
+}
+
 @media only screen and (max-width: 375px) {
   .mainRes {
     grid-template-columns: repeat(1, 270px);
     grid-template-rows: repeat(25, 300px);
+  }
+  .disclaimer {
+    margin-right: 0;
+  }
+
+  .disclaimerM {
+    margin-right: 0;
   }
 }
