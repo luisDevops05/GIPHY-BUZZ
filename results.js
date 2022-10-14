@@ -31,6 +31,22 @@ let searchBar = document.getElementById('search')
 let submitBtn = document.getElementById('submit') 
 
 
+
+let searchbarHandle = function() {
+
+    submitBtn.addEventListener('click',function(){
+        console.log('working')
+    let empty = ''
+    if(searchBar.value === empty){
+            console.log('please fill out the search')
+            alert('Please Fill Out Search Tab')
+            event.preventDefault()
+        }    
+    })
+    
+    }
+    searchbarHandle()
+
 // let searchBar1 = document.getElementById('search') 
 // let submitBtn1 = document.getElementById('submit') 
 
@@ -91,7 +107,6 @@ let searchGiphy = function(){
 // function that displays the content
 function showSearch(data){
   
-
 let imgUrl1 = data.data[0].images.downsized.url
 let imgUrl2 = data.data[1].images.downsized.url
 let imgUrl3 = data.data[2].images.downsized.url
@@ -118,7 +133,6 @@ let imgUrl23 = data.data[22].images.downsized.url
 let imgUrl24 = data.data[23].images.downsized.url
 let imgUrl25= data.data[24].images.downsized.url
 
-
 imgc1.style.backgroundImage = 'url('+imgUrl1+')'
 imgc2.style.backgroundImage = 'url('+imgUrl2+')'
 imgc3.style.backgroundImage = 'url('+imgUrl3+')'
@@ -144,11 +158,6 @@ imgc22.style.backgroundImage = 'url('+imgUrl22+')'
 imgc23.style.backgroundImage = 'url('+imgUrl23+')'
 imgc24.style.backgroundImage = 'url('+imgUrl24+')'
 imgc25.style.backgroundImage = 'url('+imgUrl25+')'
-
-
-
-
-    
 }
 
 searchGiphy()
