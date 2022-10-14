@@ -124,7 +124,7 @@ body {
 }
 
 .conImg {
-  border: solid white 2px;
+  border: solid rgba(255, 255, 255, 0.157) 2px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -255,5 +255,9 @@ footer {
 
   .seeAllLinks {
     margin-left: 30px;
+  }
+
+  .conImg {
+    border-radius: 5px;
   }
 }
