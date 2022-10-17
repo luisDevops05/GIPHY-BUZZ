@@ -61,7 +61,7 @@
 .x {
   color: rgb(5, 5, 5);
 }
-
+/* 
 @media only screen and (max-width: 375px) {
   .mainRes {
     grid-template-columns: repeat(1, 270px);
@@ -74,4 +74,4 @@
   .disclaimerM {
     margin-right: 0;
   }
-}
+} */

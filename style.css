@@ -188,7 +188,7 @@ footer {
   margin-left: 30px;
 }
 
-/* start of media query */
+/* start of media query
 @media only screen and (max-width: 375px) {
   .navbar-brand {
     font-size: 20px !important;
@@ -260,4 +260,4 @@ footer {
   .conImg {
     border-radius: 5px;
   }
-}
+} */
